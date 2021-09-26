@@ -1,0 +1,408 @@
+:root{
+    --jetBlack: #202020;
+    --grey: #333333;
+    --font: #5e5e5e;
+    --border: #bdbdbd;
+    --white: #ffffff;
+    --strongGrey: #818181;
+    --weakGrey: #e2e2e2;
+}
+
+.container{ /*poner siempre*/
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+.row{ /*poner siempre*/
+    --bs-gutter-x: 7px;
+}
+
+p{ /*poner siempre*/ 
+    margin: 0;
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    list-style-type: none;
+}
+
+.navbar-brand {
+    margin-top: -6px;
+}
+
+nav ul li{
+    padding-left: 55px;
+    font-weight: 500;
+}
+
+.nav-link{
+    color: var(--jetBlack);
+}
+
+.nav-link:focus{
+    color: var(--jetBlack);
+}
+
+.nav-link.active{
+    border-bottom: 3px solid var(--jetBlack);
+}
+
+.nav-link:hover{
+    color: var(--strongGrey);
+}
+
+a.nav-link.active.contactoBt{
+    border-bottom: 1px solid var(--border);
+}
+
+.noBt{
+    margin-top: 7px;
+}
+
+nav i{
+    font-size: 40px;
+    color: var(--jetBlack);
+}
+
+.navbar-toggler{
+    box-shadow: rgba(99, 99, 99, 0.219) 0px 2px 8px 0px;
+    transition: 0.4s;
+}
+
+.navbar-toggler.collapsed{
+    box-shadow: unset !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: rgba(99, 99, 99, 0.356) 0px 2px 8px 0px;
+}
+
+.contactoBt, .submitBt{
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    padding: 15px 25px !important;
+    transition: 0.4s;
+}
+
+.submitBt{
+    background-color: unset;
+    font-weight: 500;
+}
+
+.contactoBt:hover, .submitBt:hover{
+    background-color: var(--jetBlack);
+    color: var(--white);
+}
+
+footer p{
+    font-size: 15px;
+    color: var(--strongGrey);
+}
+
+
+footer .alCostado{
+    text-align: right;
+}
+
+.elFooter{
+    border-top: 1px solid var(--border);
+}
+
+h2{
+    font-size: 60px;
+    color: var(--jetBlack);
+    font-weight: 700;
+}
+
+.sectionUnoHome p{
+    font-size: 21px;
+    color: var(--font);
+}
+
+.homeBoton{
+    padding: 15px 25px;
+    background-color: var(--jetBlack);
+    border-radius: 5px;
+    transition: 0.4s;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sectionDosHome .row .divsito{
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.sectionDosHome h3{
+    border-top: 1px solid var(--border);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.homeBoton:hover{
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.sectionTresHome p{
+    font-size: 20px;
+    color: var(--font);
+}
+
+.sectionTresHome{
+    padding-top: 1.5rem;
+}
+
+.sectionTresHome .smaller{
+    max-width: 500px;
+}
+
+.sectionTresHome ul{
+    padding-left: unset;
+    max-width: 320px;
+}
+
+.sectionTresHome i, .sectionUnoContacto i{
+    font-size: 22px;
+    position: relative;
+    bottom: -3px;
+    left: 1px;
+}
+
+.sectionTresHome ul a, .sectionUnoContacto ul a{
+    color: var(--white);
+    padding: 5px;
+    background-color: var(--jetBlack);
+    border-radius: 5px;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.sectionTresHome ul a:hover, .sectionUnoContacto ul a:hover{
+    background-color: var(--grey);
+}
+
+section .aqui{
+    color: var(--jetBlack);
+    transition: 0.4s;
+}
+
+section .aqui:hover{
+    color: var(--strongGrey);
+}
+
+.sectionUnoContacto p{
+    font-size: 21px;
+    color: var(--font);
+}
+
+.evenSmaller{
+    max-width: 300px;
+    padding-left: 0;
+}
+
+.formContainer{
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.form-control{
+    border-color: var(--border);
+}
+
+.form-control:focus {
+    color: var(--jetBlack);
+    background-color: var(--white);
+    border-color: var(--border);
+    outline: 0;
+    box-shadow: rgba(99, 99, 99, 0.356) 0px 2px 8px 0px;
+}
+
+.form-check-input:focus {
+    border-color: var(--border);
+    outline: 0;
+    box-shadow: unset;
+}
+
+.form-check-input:checked {
+    background-color: var(--jetBlack);
+    border-color: var(--jetBlack);
+}
+
+.albumsList{
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.albumsList a{
+    text-decoration: none;
+}
+
+.albumsList h3 a{
+    color: var(--jetBlack);
+    font-size: 22px;
+}
+
+.albumsList h3 a:hover{
+    text-decoration: underline;
+}
+
+.albumsList h4{
+    color: var(--strongGrey);
+    font-size: 18px;
+}
+
+.albumsList img{
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+.albumsList img:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(99, 99, 99, 0.575) 0px 2px 8px 0px;
+}
+
+.sectionUnoProductsView ul{
+    padding-left: 50px;
+}
+
+.sectionUnoProductsView ul li{
+    font-size: 22px;
+}
+
+
+.btCuatroCeroCuatro{
+    padding: 15px 25px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--jetBlack);
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btCuatroCeroCuatro:hover{
+    color: var(--white);
+    background-color: var(--jetBlack);
+}
+
+
+@media only screen and (max-width: 992px) {
+    nav ul li{
+        padding-right: 35px;
+        padding-left: 35px;
+        border-top: 1px solid var(--weakGrey);
+    }
+
+    .navbar-collapse{
+        box-shadow: rgba(99, 99, 99, 0.219) 0px 2px 8px 0px;
+        border-top: 4px solid var(--jetBlack);
+        margin-top: 40px;
+    }
+
+    .navbar-nav{
+        padding-left: 50px;
+    }
+
+    nav ul{
+        padding: 50px;
+    }
+
+    .contactoBt{
+        border-radius: unset;
+        border: unset;
+        padding: 8px 0px !important;
+        margin-top: 7px;
+    }
+
+    .contactoBt:hover{
+        background-color: unset;
+        color: var(--strongGrey);
+    }
+
+    a.nav-link.active.contactoBt{
+        border-bottom: unset;
+        background-color: var(--strongGrey);
+    }
+
+    .nav-link.active{
+        border-bottom: var(--strongGrey);
+    }
+
+    .contactoBtLi{
+        border-bottom: 1px solid var(--weakGrey);
+    }
+
+    .imgHome{
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    footer .row{
+        text-align: center;
+    }
+
+    footer .alCostado{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .sectionDosHome .divsote{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+
+    .productsImg{
+        text-align: center !important;
+    }
+
+    .sectionUnoProductsView ul{
+        padding-left: unset;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .albumsList{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+
+    .sectionUnoProductsView ul li{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container{
+        padding: 0 20px;
+    }
+
+    .navbar-nav{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+    
+    .sectionUnoHome p{
+        font-size: 18px;
+    }
+
+    .sectionTresHome p{
+        font-size: 18px;
+    }
+    
+    .homeBoton{
+        padding: 15px 20px;
+       font-size: 14px;
+       white-space: nowrap;
+    }
+    
+}
